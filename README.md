@@ -1,7 +1,7 @@
 # Spaceship.fm
 Una radio que permite escuchar música al azar, para que des PLAY y no te preocupes por qué está sonando. También podés crear una cuenta (completamente opcional!), y añadir tu música preferida a Favoritos, para escucharla cuando quieras. *Originalmente creado en Octubre-Noviembre 2019, para Aplicaciones Móviles (EEST N°4).*
 
-[Ver online](http://erik.games/spaceship) - [Descargar código fuente](https://github.com/despediteerik/spaceship/archive/master.zip)
+[Descargar código fuente](https://github.com/despediteerik/spaceship/archive/master.zip)
 
 # Instalación
 La documentación original (con imágenes) puede encontrarse en [Documentos de Google](https://docs.google.com/document/d/1HcWq1_oTKGpBQfT-RczXBNjHnJrvTC8pwyr61-LYUmQ/edit?usp=sharing). Para instalar Spaceship en tu computadora:
@@ -15,7 +15,7 @@ La documentación original (con imágenes) puede encontrarse en [Documentos de G
 - Entrá a localhost/spaceship en un navegador.
 
 # Usar la API
-Las instrucciones para usar la API se encuentran en [.../spaceship/api](http://erik.games/spaceship/api).
+Las instrucciones para usar la API se encuentran en .../spaceship/api.
 
 # Licencia, música usada, y demás
 
