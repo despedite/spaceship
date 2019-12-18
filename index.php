@@ -10,6 +10,7 @@
 
 <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
 <meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
 <title>Spaceship</title>
 <script>
 //define vars as global
