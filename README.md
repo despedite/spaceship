@@ -1,4 +1,9 @@
-# Spaceship.fm
+<p align="center">
+    <img src="https://media1.tenor.com/images/fca14e30a27aff8b3a0740744c6105ef/tenor.gif?itemid=13485574" width="250">
+</p>
+
+<h3 align="center">Spaceship.fm</h3>
+
 Una radio que permite escuchar música al azar, para que des PLAY y no te preocupes por qué está sonando. También podés crear una cuenta (completamente opcional!), y añadir tu música preferida a Favoritos, para escucharla cuando quieras. *Originalmente creado en Octubre-Noviembre 2019, para Aplicaciones Móviles (EEST N°4).*
 
 [Descargar código fuente](https://github.com/despediteerik/spaceship/archive/master.zip)
