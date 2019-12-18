@@ -133,13 +133,8 @@ function activateCheats() {
 </div>
 
 <script>
-function reproMusica() {
-	
-	if (typeof audio !== 'undefined') {
-		if (audio.paused == false) {
-			 audio.pause();//pause if playing
-		}
-	}
+
+function startRandomMus() {
   var hour = 69;
   var nameofsong = "Música copada";
  
@@ -173,40 +168,20 @@ function reproMusica() {
 	y.innerHTML = "⏭️"
 	audio = new Audio(randomValue);
     audio.play();
-		  
+}
+
+function reproMusica() {
+	startRandomMus();
+	if (typeof audio !== 'undefined') {
+		if (audio.paused == false) {
+			 audio.pause();//pause if playing
+		}
+	}
+}
+
+if (audio) {
 	audio.addEventListener('ended',function(){
-		  var hour = 69;
-		  var nameofsong = "Música copada";
-		 
-			// DATA DE LA BASE DE DATOS
-			var yourUrl = "http://localhost/spaceship/api/v1/getData.php?f=json&t=musica";
-			var xhReq = new XMLHttpRequest();
-			xhReq.open("GET", yourUrl, false);
-			xhReq.send(null);
-			jsonData = JSON.parse(xhReq.responseText);
-			console.log(jsonData.data);
-			
-			randomNumber = parseInt(Math.random() * jsonData.data.length)
-			console.log(jsonData.data.length)
-			randomName = jsonData.data[randomNumber][2] + " - " + jsonData.data[randomNumber][3]
-			randomValue = jsonData.data[randomNumber][1]
-			
-			var url = new URL(window.location);
-			var params = new URLSearchParams(url.search);
-			
-			if (params.has('song')) {
-				randomValue = params.get('song')
-				randomName = params.get('name')
-			}
-			
-			console.log(randomName)
-			console.log(randomValue)
-			
-			var x = document.getElementById("newtext");
-			x.innerHTML = randomName;
-			audio = new Audio(randomValue);
-			audio.play();
-	
+		  startRandomMus();
     });
 }
 
