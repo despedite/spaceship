@@ -171,12 +171,15 @@ function startRandomMus() {
 }
 
 function reproMusica() {
-	startRandomMus();
-	if (typeof audio !== 'undefined') {
-		if (audio.paused == false) {
-			 audio.pause();//pause if playing
+	var y = document.getElementById("nextSong");
+	if (y.innerHTML = "▶️") {
+		if (typeof audio !== 'undefined') {
+			if (audio.paused == false) {
+				 audio.pause();//pause if playing
+			}
 		}
 	}
+	startRandomMus();
 }
 
 if (audio) {
