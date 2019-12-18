@@ -3,6 +3,8 @@ Una radio que permite escuchar música al azar, para que des PLAY y no te preocu
 
 [Descargar código fuente](https://github.com/despediteerik/spaceship/archive/master.zip)
 
+![](https://raw.githubusercontent.com/despediteerik/spaceship/master/grannate.png)
+
 # Instalación
 La documentación original (con imágenes) puede encontrarse en [Documentos de Google](https://docs.google.com/document/d/1HcWq1_oTKGpBQfT-RczXBNjHnJrvTC8pwyr61-LYUmQ/edit?usp=sharing). Para instalar Spaceship en tu computadora:
 
