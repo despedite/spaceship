@@ -117,8 +117,8 @@ function activateCheats() {
     <h5 class="card-title">Spaceship.fm</h5>
     <h6 class="card-subtitle mb-2 text-muted">Estás escuchando:</h6>
     <p class="card-text">🎵 <i><label id="newtext">Presioná PLAY para escuchar!</label></i></p>
-    <a href="#" onclick="reproMusica();" class="card-link">⏭️</a>
-    <a href="#" onclick="pauseMusic();" class="card-link">⏸️</a>
+    <a href="#" onclick="reproMusica();" id="nextSong" class="card-link">▶️</a>
+    <a href="#" onclick="pauseMusic();" id="musicPauser" class="card-link">⏸️</a>
 	<?php  if (isset($_SESSION['username'])) : $randomName = ""; $randomValue = "";?>
 		<a href="#" onclick="heartComment();" class="card-link">❤️</a>
 		<a href="favorites/" class="card-link">👨 <?php echo $_SESSION['username']; ?></a>
@@ -169,6 +169,8 @@ function reproMusica() {
 	
 	var x = document.getElementById("newtext");
     x.innerHTML = randomName;
+	var y = document.getElementById("nextSong");
+	y.innerHTML = "⏭️"
 	audio = new Audio(randomValue);
     audio.play();
 		  
@@ -209,12 +211,16 @@ function reproMusica() {
 }
 
 	function pauseMusic() {
+		var btn = document.getElementById('musicPauser');
 		  console.log(audio.paused)
 		  if (typeof audio !== 'undefined') {
 			 if (audio.paused == false) {
 			  audio.pause();//pause if playing
+			  musicPauser.innerHTML = "▶️"
+			  
 			} else {
 			  audio.play();//Play If Pausing
+			  musicPauser.innerHTML = "⏸️"
 			}
 		  }
 	}
