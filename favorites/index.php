@@ -3,7 +3,7 @@
   include('../console.php');
 
   if (!isset($_SESSION['username'])) {
-  	header("location: login/index.php");
+  	header("location: ../login/index.php");
   }
 ?>
 
